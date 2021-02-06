@@ -1,11 +1,3 @@
-"""
-The following implements object detection using HOG and color space features.
-The code is a modified version of the code supplied during the lessons of
-object detection section of the Udacity Self-driving-car Nano-degree
-
-The code is supplied 'AS IS'
-"""
-
 import cv2
 import numpy as np
 from skimage.feature import hog
