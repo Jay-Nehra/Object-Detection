@@ -1,6 +1,6 @@
 import cv2
 
-#from net.build import TFNet
+from net.build import TFNet
 
 class yolo():
 
@@ -9,8 +9,8 @@ class yolo():
         # chkpt : model weights to be used
         # thresh : threshold for object detection
         options = {"model": model, "load": chkpt, "threshold": threshold}
-        """ Uncomment below for yolo """
-        #self.tfnet = TFNet(options)
+        
+        self.tfnet = TFNet(options)
 
     def draw_box(self, image, objects, box_color=(0,0,255), show_label=False):
         # draw boxes around objects
